@@ -1,0 +1,3 @@
+This is a Rails app that once deployed will help the coach of an ACM ICPC team monitor
+the progress of their team members.  It will track which problem sets are being
+attempted, which have been solved and by who.
