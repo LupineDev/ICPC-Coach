@@ -1,0 +1,19 @@
+%p
+  %b Name:
+  =h @members.name 
+
+%p
+  %b Email:
+  =h @members.email 
+
+%p
+  %b Notes:
+  =h @members.notes 
+
+%p
+  %b Team:
+  =h @members.team_id 
+
+
+= link_to 'Edit', edit_member_path(@member)
+= link_to 'Back', members_path

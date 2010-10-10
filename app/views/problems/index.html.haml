@@ -1,0 +1,19 @@
+%h1 Listing problems
+
+%table
+  %tr
+    %th Name
+    %th Description
+    %th Problem set
+
+- for problems in @problems
+  %tr
+      %td=h problems.name
+      %td=h problems.description
+      %td=h problems.problem_set_id
+  
+    %td= link_to 'Show', problem_path(problem)
+    %td= link_to 'Edit', edit_problem_path(problem)
+    %td= link_to 'Destroy', problem_path(problem), :confirm => 'Are you sure?', :method => :delete, :confirm => "Are you sure?", :method => :delete
+    
+= link_to 'New problem', new_problem_path 

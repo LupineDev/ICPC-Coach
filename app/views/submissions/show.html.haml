@@ -1,0 +1,19 @@
+%p
+  %b Solved:
+  =h @submissions.solved 
+
+%p
+  %b Member:
+  =h @submissions.member_id 
+
+%p
+  %b Team:
+  =h @submissions.team_id 
+
+%p
+  %b Problem:
+  =h @submissions.problem_id 
+
+
+= link_to 'Edit', edit_submission_path(@submission)
+= link_to 'Back', submissions_path

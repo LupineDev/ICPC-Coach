@@ -1,0 +1,23 @@
+%h1 Editing members
+
+= error_messages_for :members
+
+- form_for(@member) do |f|
+  %p
+    %b Name
+    = f.text_field :name 
+  %p
+    %b Email
+    = f.text_field :email 
+  %p
+    %b Notes
+    = f.text_area :notes 
+  %p
+    %b Team
+    = f.text_field :team_id 
+    
+  %p= f.submit "Update"
+  
+= link_to 'Show', member_path(@member)
+= link_to 'Back', members_path
+

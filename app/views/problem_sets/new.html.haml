@@ -1,0 +1,14 @@
+%h1 New problem_set
+
+= error_messages_for :problem_set 
+
+- form_for(@problem_set) do |f| 
+  %p
+    %b Name
+    %br
+    = f.text_field :name 
+
+  %p
+    = f.submit "Create"
+    
+= link_to 'Back', problem_sets_path 

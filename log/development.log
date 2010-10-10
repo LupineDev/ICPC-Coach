@@ -1,0 +1,67 @@
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (93.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (81.9ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (1.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateMembers (20101010121333)
+  [4;35;1mSQL (1.3ms)[0m   [0mCREATE TABLE "members" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "notes" text, "team_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101010121333')[0m
+Migrating to CreateTeams (20101010122155)
+  [4;35;1mSQL (1.4ms)[0m   [0mCREATE TABLE "teams" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101010122155')[0m
+Migrating to CreateProblems (20101010122821)
+  [4;35;1mSQL (1.2ms)[0m   [0mCREATE TABLE "problems" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "problem_set_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101010122821')[0m
+Migrating to CreateSubmissions (20101010123009)
+  [4;35;1mSQL (1.4ms)[0m   [0mCREATE TABLE "submissions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "solved" boolean, "member_id" integer, "team_id" integer, "problem_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101010123009')[0m
+Migrating to CreateProblemSets (20101010123202)
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE TABLE "problem_sets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101010123202')[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.9ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("members")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("problem_sets")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("problems")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("submissions")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("teams")[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMembers (20101010121333)
+Migrating to CreateTeams (20101010122155)
+Migrating to CreateProblems (20101010122821)
+Migrating to CreateSubmissions (20101010123009)
+Migrating to CreateProblemSets (20101010123202)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("members")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("problem_sets")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("problems")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("submissions")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("teams")[0m

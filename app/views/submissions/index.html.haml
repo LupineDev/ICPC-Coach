@@ -1,0 +1,21 @@
+%h1 Listing submissions
+
+%table
+  %tr
+    %th Solved
+    %th Member
+    %th Team
+    %th Problem
+
+- for submissions in @submissions
+  %tr
+      %td=h submissions.solved
+      %td=h submissions.member_id
+      %td=h submissions.team_id
+      %td=h submissions.problem_id
+  
+    %td= link_to 'Show', submission_path(submission)
+    %td= link_to 'Edit', edit_submission_path(submission)
+    %td= link_to 'Destroy', submission_path(submission), :confirm => 'Are you sure?', :method => :delete, :confirm => "Are you sure?", :method => :delete
+    
+= link_to 'New submission', new_submission_path 

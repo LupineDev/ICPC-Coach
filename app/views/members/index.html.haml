@@ -1,0 +1,21 @@
+%h1 Listing members
+
+%table
+  %tr
+    %th Name
+    %th Email
+    %th Notes
+    %th Team
+
+- for members in @members
+  %tr
+      %td=h members.name
+      %td=h members.email
+      %td=h members.notes
+      %td=h members.team_id
+  
+    %td= link_to 'Show', member_path(member)
+    %td= link_to 'Edit', edit_member_path(member)
+    %td= link_to 'Destroy', member_path(member), :confirm => 'Are you sure?', :method => :delete, :confirm => "Are you sure?", :method => :delete
+    
+= link_to 'New member', new_member_path 

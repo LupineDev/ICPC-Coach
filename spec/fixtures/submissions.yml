@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  solved: false
+  member_id: 1
+  team_id: 1
+  problem_id: 1
+
+two:
+  solved: false
+  member_id: 1
+  team_id: 1
+  problem_id: 1

@@ -1,0 +1,20 @@
+%h1 Editing problems
+
+= error_messages_for :problems
+
+- form_for(@problem) do |f|
+  %p
+    %b Name
+    = f.text_field :name 
+  %p
+    %b Description
+    = f.text_area :description 
+  %p
+    %b Problem set
+    = f.text_field :problem_set_id 
+    
+  %p= f.submit "Update"
+  
+= link_to 'Show', problem_path(@problem)
+= link_to 'Back', problems_path
+
