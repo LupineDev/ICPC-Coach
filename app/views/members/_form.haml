@@ -1,0 +1,22 @@
+= error_messages_for :members 
+
+- form_for(member) do |f| 
+  %p
+    %b Name
+    %br
+    = f.text_field :name 
+  %p
+    %b Email
+    %br
+    = f.text_field :email 
+  %p
+    %b Notes
+    %br
+    = f.text_area :notes 
+  %p
+    %b Team
+    %br
+    = f.text_field :team_id 
+
+  %p
+    = f.submit "Create"

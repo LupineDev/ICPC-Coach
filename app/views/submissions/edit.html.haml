@@ -1,22 +1,6 @@
 %h1 Editing submissions
 
-= error_messages_for :submissions
-
-- form_for(@submission) do |f|
-  %p
-    %b Solved
-    = f.check_box :solved 
-  %p
-    %b Member
-    = f.text_field :member_id 
-  %p
-    %b Team
-    = f.text_field :team_id 
-  %p
-    %b Problem
-    = f.text_field :problem_id 
-    
-  %p= f.submit "Update"
+= render :partial => '/submissions/form', :locals => { :submission => @submission }
   
 = link_to 'Show', submission_path(@submission)
 = link_to 'Back', submissions_path

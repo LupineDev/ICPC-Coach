@@ -1,0 +1,10 @@
+= error_messages_for :teams 
+
+- form_for(team) do |f| 
+  %p
+    %b Name
+    %br
+    = f.text_field :name 
+
+  %p
+    = f.submit "Create"

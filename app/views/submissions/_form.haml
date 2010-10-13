@@ -1,0 +1,22 @@
+= error_messages_for :submissions 
+
+- form_for(submission) do |f| 
+  %p
+    %b Solved
+    %br
+    = f.check_box :solved 
+  %p
+    %b Member
+    %br
+    = f.text_field :member_id 
+  %p
+    %b Team
+    %br
+    = f.text_field :team_id 
+  %p
+    %b Problem
+    %br
+    = f.text_field :problem_id 
+
+  %p
+    = f.submit "Create"

@@ -1,0 +1,11 @@
+= error_messages_for :problem_set 
+
+- form_for(problem_set) do |f| 
+  %p
+    %b Name
+    %br
+    = f.text_field :name 
+
+  %p
+    = f.submit "Create"
+

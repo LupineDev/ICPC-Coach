@@ -1,13 +1,6 @@
 %h1 Editing teams
 
-= error_messages_for :teams
-
-- form_for(@team) do |f|
-  %p
-    %b Name
-    = f.text_field :name 
-    
-  %p= f.submit "Update"
+= render :partial => '/teams/form', :locals => { :team => @team }
   
 = link_to 'Show', team_path(@team)
 = link_to 'Back', teams_path
