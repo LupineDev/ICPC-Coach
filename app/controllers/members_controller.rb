@@ -2,7 +2,7 @@ class MembersController < ApplicationController
   # GET /members
   # GET /members.xml
   def index
-    @members = Members.find(:all)
+    @members = Member.find(:all)
 
     respond_to do |format|
       format.html # index.haml
@@ -13,7 +13,7 @@ class MembersController < ApplicationController
   # GET /members/1
   # GET /members/1.xml
   def show
-    @members = Members.find(params[:id])
+    @members = Member.find(params[:id])
 
     respond_to do |format|
       format.html # show.haml
@@ -24,7 +24,7 @@ class MembersController < ApplicationController
   # GET /members/new
   # GET /members/new.xml
   def new
-    @members = Members.new
+    @members = Member.new
 
     respond_to do |format|
       format.html # new.haml
@@ -34,17 +34,17 @@ class MembersController < ApplicationController
 
   # GET /members/1/edit
   def edit
-    @members = Members.find(params[:id])
+    @members = Member.find(params[:id])
   end
 
   # POST /members
   # POST /members.xml
   def create
-    @members = Members.new(params[:members])
+    @members = Member.new(params[:members])
 
     respond_to do |format|
       if @members.save
-        flash[:notice] = 'Members was successfully created.'
+        flash[:notice] = 'Member was successfully created.'
         format.html { redirect_to(member_path(@members)) }
         format.xml  { render :xml => @members, :status => :created, :location => @members }
       else
@@ -57,11 +57,11 @@ class MembersController < ApplicationController
   # PUT /members/1
   # PUT /members/1.xml
   def update
-    @members = Members.find(params[:id])
+    @members = Member.find(params[:id])
 
     respond_to do |format|
       if @members.update_attributes(params[:members])
-        flash[:notice] = 'Members was successfully updated.'
+        flash[:notice] = 'Member was successfully updated.'
         format.html { redirect_to(member_path(@members)) }
         format.xml  { head :ok }
       else
@@ -74,7 +74,7 @@ class MembersController < ApplicationController
   # DELETE /members/1
   # DELETE /members/1.xml
   def destroy
-    @members = Members.find(params[:id])
+    @members = Member.find(params[:id])
     @members.destroy
 
     respond_to do |format|

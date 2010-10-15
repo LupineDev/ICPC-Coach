@@ -1,2 +1,2 @@
-class Submissions < ActiveRecord::Base
+class Submission < ActiveRecord::Base
 end

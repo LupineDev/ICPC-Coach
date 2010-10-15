@@ -1,2 +1,2 @@
-class Problems < ActiveRecord::Base
+class Problem < ActiveRecord::Base
 end

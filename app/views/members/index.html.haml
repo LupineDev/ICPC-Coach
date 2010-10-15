@@ -9,10 +9,10 @@
 
 - for members in @members
   %tr
-      %td=h members.name
-      %td=h members.email
-      %td=h members.notes
-      %td=h members.team_id
+    %td=h members.name
+    %td=h members.email
+    %td=h members.notes
+    %td=h members.team_id
   
     %td= link_to 'Show', member_path(member)
     %td= link_to 'Edit', edit_member_path(member)

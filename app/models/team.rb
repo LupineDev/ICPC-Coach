@@ -1,2 +1,2 @@
-class Teams < ActiveRecord::Base
+class Team < ActiveRecord::Base
 end

@@ -1,84 +1,84 @@
 class TeamsController < ApplicationController
-  # GET /teams
-  # GET /teams.xml
+  # GET /team
+  # GET /team.xml
   def index
     @teams = Teams.find(:all)
 
     respond_to do |format|
       format.html # index.haml
-      format.xml  { render :xml => @teams }
+      format.xml  { render :xml => @team }
     end
   end
 
-  # GET /teams/1
-  # GET /teams/1.xml
+  # GET /team/1
+  # GET /team/1.xml
   def show
-    @teams = Teams.find(params[:id])
+    @team = Teams.find(params[:id])
 
     respond_to do |format|
       format.html # show.haml
-      format.xml  { render :xml => @teams }
+      format.xml  { render :xml => @team }
     end
   end
 
-  # GET /teams/new
-  # GET /teams/new.xml
+  # GET /team/new
+  # GET /team/new.xml
   def new
-    @teams = Teams.new
+    @team = Teams.new
 
     respond_to do |format|
       format.html # new.haml
-      format.xml  { render :xml => @teams }
+      format.xml  { render :xml => @team }
     end
   end
 
-  # GET /teams/1/edit
+  # GET /team/1/edit
   def edit
-    @teams = Teams.find(params[:id])
+    @team = Teams.find(params[:id])
   end
 
-  # POST /teams
-  # POST /teams.xml
+  # POST /team
+  # POST /team.xml
   def create
-    @teams = Teams.new(params[:teams])
+    @team = Teams.new(params[:team])
 
     respond_to do |format|
-      if @teams.save
+      if @team.save
         flash[:notice] = 'Teams was successfully created.'
-        format.html { redirect_to(team_path(@teams)) }
-        format.xml  { render :xml => @teams, :status => :created, :location => @teams }
+        format.html { redirect_to(team_path(@team)) }
+        format.xml  { render :xml => @team, :status => :created, :location => @team }
       else
         format.html { render :action => "new" }
-        format.xml  { render :xml => @teams.errors, :status => :unprocessable_entity }
+        format.xml  { render :xml => @team.errors, :status => :unprocessable_entity }
       end
     end
   end
 
-  # PUT /teams/1
-  # PUT /teams/1.xml
+  # PUT /team/1
+  # PUT /team/1.xml
   def update
-    @teams = Teams.find(params[:id])
+    @team = Teams.find(params[:id])
 
     respond_to do |format|
-      if @teams.update_attributes(params[:teams])
+      if @team.update_attributes(params[:team])
         flash[:notice] = 'Teams was successfully updated.'
-        format.html { redirect_to(team_path(@teams)) }
+        format.html { redirect_to(team_path(@team)) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
-        format.xml  { render :xml => @teams.errors, :status => :unprocessable_entity }
+        format.xml  { render :xml => @team.errors, :status => :unprocessable_entity }
       end
     end
   end
 
-  # DELETE /teams/1
-  # DELETE /teams/1.xml
+  # DELETE /team/1
+  # DELETE /team/1.xml
   def destroy
-    @teams = Teams.find(params[:id])
-    @teams.destroy
+    @team = Teams.find(params[:id])
+    @team.destroy
 
     respond_to do |format|
-      format.html { redirect_to(teams_url) }
+      format.html { redirect_to(team_url) }
       format.xml  { head :ok }
     end
   end

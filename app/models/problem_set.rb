@@ -1,2 +1,2 @@
-class Problem_set < ActiveRecord::Base
+class ProblemSet < ActiveRecord::Base
 end

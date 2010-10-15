@@ -1,84 +1,84 @@
 class SubmissionsController < ApplicationController
-  # GET /submissions
-  # GET /submissions.xml
+  # GET /submission
+  # GET /submission.xml
   def index
-    @submissions = Submissions.find(:all)
+    @submissions = Submission.find(:all)
 
     respond_to do |format|
       format.html # index.haml
-      format.xml  { render :xml => @submissions }
+      format.xml  { render :xml => @submission }
     end
   end
 
-  # GET /submissions/1
-  # GET /submissions/1.xml
+  # GET /submission/1
+  # GET /submission/1.xml
   def show
-    @submissions = Submissions.find(params[:id])
+    @submission = Submission.find(params[:id])
 
     respond_to do |format|
       format.html # show.haml
-      format.xml  { render :xml => @submissions }
+      format.xml  { render :xml => @submission }
     end
   end
 
-  # GET /submissions/new
-  # GET /submissions/new.xml
+  # GET /submission/new
+  # GET /submission/new.xml
   def new
-    @submissions = Submissions.new
+    @submission = Submission.new
 
     respond_to do |format|
       format.html # new.haml
-      format.xml  { render :xml => @submissions }
+      format.xml  { render :xml => @submission }
     end
   end
 
-  # GET /submissions/1/edit
+  # GET /submission/1/edit
   def edit
-    @submissions = Submissions.find(params[:id])
+    @submission = Submission.find(params[:id])
   end
 
-  # POST /submissions
-  # POST /submissions.xml
+  # POST /submission
+  # POST /submission.xml
   def create
-    @submissions = Submissions.new(params[:submissions])
+    @submission = Submission.new(params[:submission])
 
     respond_to do |format|
-      if @submissions.save
-        flash[:notice] = 'Submissions was successfully created.'
-        format.html { redirect_to(submission_path(@submissions)) }
-        format.xml  { render :xml => @submissions, :status => :created, :location => @submissions }
+      if @submission.save
+        flash[:notice] = 'Submission was successfully created.'
+        format.html { redirect_to(submission_path(@submission)) }
+        format.xml  { render :xml => @submission, :status => :created, :location => @submission }
       else
         format.html { render :action => "new" }
-        format.xml  { render :xml => @submissions.errors, :status => :unprocessable_entity }
+        format.xml  { render :xml => @submission.errors, :status => :unprocessable_entity }
       end
     end
   end
 
-  # PUT /submissions/1
-  # PUT /submissions/1.xml
+  # PUT /submission/1
+  # PUT /submission/1.xml
   def update
-    @submissions = Submissions.find(params[:id])
+    @submission = Submission.find(params[:id])
 
     respond_to do |format|
-      if @submissions.update_attributes(params[:submissions])
-        flash[:notice] = 'Submissions was successfully updated.'
-        format.html { redirect_to(submission_path(@submissions)) }
+      if @submission.update_attributes(params[:submission])
+        flash[:notice] = 'Submission was successfully updated.'
+        format.html { redirect_to(submission_path(@submission)) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
-        format.xml  { render :xml => @submissions.errors, :status => :unprocessable_entity }
+        format.xml  { render :xml => @submission.errors, :status => :unprocessable_entity }
       end
     end
   end
 
-  # DELETE /submissions/1
-  # DELETE /submissions/1.xml
+  # DELETE /submission/1
+  # DELETE /submission/1.xml
   def destroy
-    @submissions = Submissions.find(params[:id])
-    @submissions.destroy
+    @submission = Submission.find(params[:id])
+    @submission.destroy
 
     respond_to do |format|
-      format.html { redirect_to(submissions_url) }
+      format.html { redirect_to(submission_url) }
       format.xml  { head :ok }
     end
   end

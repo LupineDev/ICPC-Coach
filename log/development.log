@@ -65,3 +65,152 @@ Migrating to CreateProblemSets (20101010123202)
   [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("problems")[0m
   [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("submissions")[0m
   [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("teams")[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateMembers (20101010121333)
+Migrating to CreateTeams (20101010122155)
+Migrating to CreateProblems (20101010122821)
+Migrating to CreateSubmissions (20101010123009)
+Migrating to CreateProblemSets (20101010123202)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("members")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("problem_sets")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("problems")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("submissions")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("teams")[0m
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-10-12 14:55:50) [GET]
+
+NameError (uninitialized constant MembersController::Members):
+  app/controllers/members_controller.rb:5:in `index'
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (44.2ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-10-12 14:56:34) [GET]
+
+NameError (uninitialized constant MembersController::Members):
+  app/controllers/members_controller.rb:5:in `index'
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (40.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-10-12 15:06:40) [GET]
+  [4;36;1mMember Load (0.6ms)[0m   [0;1mSELECT * FROM "members" [0m
+Rendering members/index
+
+ActionView::TemplateError (The line was indented 2 levels deeper than the previous line.) on line #12 of app/views/members/index.html.haml:
+9: 
+10: - for members in @members
+11:   %tr
+12:       %td=h members.name
+13:       %td=h members.email
+14:       %td=h members.notes
+15:       %td=h members.team_id
+
+    app/views/members/index.html.haml:12
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/precompiler.rb:181:in `precompile'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/engine.rb:116:in `initialize'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/template/plugin.rb:27:in `new'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/template/plugin.rb:27:in `compile'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:7:in `index'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (57.2ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-10-12 15:07:21) [GET]
+  [4;35;1mMember Load (0.6ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering members/index
+
+ActionView::TemplateError (The line was indented 2 levels deeper than the previous line.) on line #12 of app/views/members/index.html.haml:
+9: 
+10: - for members in @members
+11:   %tr
+12:       %td=h members.name
+13:       %td=h members.email
+14:       %td=h members.notes
+15:       %td=h members.team_id
+
+    app/views/members/index.html.haml:12
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/precompiler.rb:181:in `precompile'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/engine.rb:116:in `initialize'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/template/plugin.rb:27:in `new'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/template/plugin.rb:27:in `compile'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:7:in `index'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (54.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-10-12 15:07:23) [GET]
+  [4;36;1mMember Load (0.5ms)[0m   [0;1mSELECT * FROM "members" [0m
+Rendering members/index
+
+ActionView::TemplateError (The line was indented 2 levels deeper than the previous line.) on line #12 of app/views/members/index.html.haml:
+9: 
+10: - for members in @members
+11:   %tr
+12:       %td=h members.name
+13:       %td=h members.email
+14:       %td=h members.notes
+15:       %td=h members.team_id
+
+    app/views/members/index.html.haml:12
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/precompiler.rb:181:in `precompile'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/engine.rb:116:in `initialize'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/template/plugin.rb:27:in `new'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/template/plugin.rb:27:in `compile'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:7:in `index'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (138.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-10-12 15:07:48) [GET]
+  [4;35;1mMember Load (0.5ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering members/index
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2010-10-12 15:08:24) [GET]
+
+NameError (uninitialized constant TeamsController::Teams):
+  app/controllers/teams_controller.rb:5:in `index'
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (39.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)

@@ -1,84 +1,84 @@
 class ProblemsController < ApplicationController
-  # GET /problems
-  # GET /problems.xml
+  # GET /problem
+  # GET /problem.xml
   def index
-    @problems = Problems.find(:all)
+    @problems = Problem.find(:all)
 
     respond_to do |format|
       format.html # index.haml
-      format.xml  { render :xml => @problems }
+      format.xml  { render :xml => @problem }
     end
   end
 
-  # GET /problems/1
-  # GET /problems/1.xml
+  # GET /problem/1
+  # GET /problem/1.xml
   def show
-    @problems = Problems.find(params[:id])
+    @problem = Problem.find(params[:id])
 
     respond_to do |format|
       format.html # show.haml
-      format.xml  { render :xml => @problems }
+      format.xml  { render :xml => @problem }
     end
   end
 
-  # GET /problems/new
-  # GET /problems/new.xml
+  # GET /problem/new
+  # GET /problem/new.xml
   def new
-    @problems = Problems.new
+    @problem = Problem.new
 
     respond_to do |format|
       format.html # new.haml
-      format.xml  { render :xml => @problems }
+      format.xml  { render :xml => @problem }
     end
   end
 
-  # GET /problems/1/edit
+  # GET /problem/1/edit
   def edit
-    @problems = Problems.find(params[:id])
+    @problem = Problem.find(params[:id])
   end
 
-  # POST /problems
-  # POST /problems.xml
+  # POST /problem
+  # POST /problem.xml
   def create
-    @problems = Problems.new(params[:problems])
+    @problem = Problem.new(params[:problem])
 
     respond_to do |format|
-      if @problems.save
-        flash[:notice] = 'Problems was successfully created.'
-        format.html { redirect_to(problem_path(@problems)) }
-        format.xml  { render :xml => @problems, :status => :created, :location => @problems }
+      if @problem.save
+        flash[:notice] = 'Problem.was successfully created.'
+        format.html { redirect_to(problem_path(@problem)) }
+        format.xml  { render :xml => @problem, :status => :created, :location => @problem }
       else
         format.html { render :action => "new" }
-        format.xml  { render :xml => @problems.errors, :status => :unprocessable_entity }
+        format.xml  { render :xml => @problem.errors, :status => :unprocessable_entity }
       end
     end
   end
 
-  # PUT /problems/1
-  # PUT /problems/1.xml
+  # PUT /problem/1
+  # PUT /problem/1.xml
   def update
-    @problems = Problems.find(params[:id])
+    @problem = Problem.find(params[:id])
 
     respond_to do |format|
-      if @problems.update_attributes(params[:problems])
-        flash[:notice] = 'Problems was successfully updated.'
-        format.html { redirect_to(problem_path(@problems)) }
+      if @problem.update_attributes(params[:problem])
+        flash[:notice] = 'Problem.was successfully updated.'
+        format.html { redirect_to(problem_path(@problem)) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
-        format.xml  { render :xml => @problems.errors, :status => :unprocessable_entity }
+        format.xml  { render :xml => @problem.errors, :status => :unprocessable_entity }
       end
     end
   end
 
-  # DELETE /problems/1
-  # DELETE /problems/1.xml
+  # DELETE /problem/1
+  # DELETE /problem/1.xml
   def destroy
-    @problems = Problems.find(params[:id])
-    @problems.destroy
+    @problem = Problem.find(params[:id])
+    @problem.destroy
 
     respond_to do |format|
-      format.html { redirect_to(problems_url) }
+      format.html { redirect_to(problem_url) }
       format.xml  { head :ok }
     end
   end
