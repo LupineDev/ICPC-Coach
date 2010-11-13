@@ -6,7 +6,8 @@
 
 - for problem_set in @problem_sets
   %tr
-      %td=h problem_set.name
+    %td
+      =h problem_set.name
   
     %td= link_to 'Show', problem_set_path(problem_set)
     %td= link_to 'Edit', edit_problem_set_path(problem_set)

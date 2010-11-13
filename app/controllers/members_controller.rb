@@ -1,4 +1,5 @@
 class MembersController < ApplicationController
+	layout "application"
   # GET /members
   # GET /members.xml
   def index
@@ -13,7 +14,7 @@ class MembersController < ApplicationController
   # GET /members/1
   # GET /members/1.xml
   def show
-    @members = Member.find(params[:id])
+    @member = Member.find(params[:id])
 
     respond_to do |format|
       format.html # show.haml
@@ -24,7 +25,7 @@ class MembersController < ApplicationController
   # GET /members/new
   # GET /members/new.xml
   def new
-    @members = Member.new
+    @members= Member.new
 
     respond_to do |format|
       format.html # new.haml
@@ -34,7 +35,7 @@ class MembersController < ApplicationController
 
   # GET /members/1/edit
   def edit
-    @members = Member.find(params[:id])
+    @member = Member.find(params[:id])
   end
 
   # POST /members
@@ -74,8 +75,8 @@ class MembersController < ApplicationController
   # DELETE /members/1
   # DELETE /members/1.xml
   def destroy
-    @members = Member.find(params[:id])
-    @members.destroy
+    @member = Member.find(params[:id])
+    @member.destroy
 
     respond_to do |format|
       format.html { redirect_to(members_url) }

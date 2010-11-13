@@ -1,0 +1,26 @@
+!!! XML
+!!!
+%html
+  %head
+    = stylesheet_link_tag "styles"
+  %body
+    #page
+      #header
+        %header
+          #nav
+            %ul
+              %li
+                = link_to "Contestants", members_path
+              %li
+                = link_to "Problem Sets", problem_sets_path
+              %li
+                = link_to "Teams", teams_path
+              %li
+                = link_to "Submissions", submissions_path
+      #main
+        #content
+          = render :partial => 'layouts/flashes' unless flash.empty?
+          %section
+            = yield
+      #footer
+        = link_to "Footer Links"

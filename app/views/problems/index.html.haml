@@ -8,9 +8,9 @@
 
 - for problems in @problems
   %tr
-      %td=h problems.name
-      %td=h problems.description
-      %td=h problems.problem_set_id
+    %td=h problems.name
+    %td=h problems.description
+    %td=h problems.problem_set_id
   
     %td= link_to 'Show', problem_path(problem)
     %td= link_to 'Edit', edit_problem_path(problem)

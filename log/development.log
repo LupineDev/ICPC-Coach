@@ -214,3 +214,409 @@ NameError (uninitialized constant TeamsController::Teams):
 Rendered rescues/_trace (39.1ms)
 Rendered rescues/_request_and_response (0.4ms)
 Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-13 00:30:48) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-11-13 00:52:01) [GET]
+  [4;36;1mMember Load (1.0ms)[0m   [0;1mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering members/index
+Completed in 183ms (View: 109, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-11-13 00:57:50) [GET]
+  [4;35;1mMember Load (1.0ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering members/index
+Completed in 33ms (View: 19, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ProblemSetsController#index (for 127.0.0.1 at 2010-11-13 00:57:53) [GET]
+  [4;36;1mProblemSet Load (0.8ms)[0m   [0;1mSELECT * FROM "problem_sets" [0m
+Rendering template within layouts/application
+Rendering problem_sets/index
+
+ActionView::TemplateError (The line was indented 2 levels deeper than the previous line.) on line #9 of app/views/problem_sets/index.html.haml:
+6: 
+7: - for problem_set in @problem_sets
+8:   %tr
+9:       %td=h problem_set.name
+10:   
+11:     %td= link_to 'Show', problem_set_path(problem_set)
+12:     %td= link_to 'Edit', edit_problem_set_path(problem_set)
+
+    app/views/problem_sets/index.html.haml:9
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/precompiler.rb:181:in `precompile'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/engine.rb:116:in `initialize'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/template/plugin.rb:27:in `new'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/template/plugin.rb:27:in `compile'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/problem_sets_controller.rb:8:in `index'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (87.8ms)
+Rendered rescues/_request_and_response (2.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-11-13 00:58:00) [GET]
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering members/index
+Completed in 12ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-11-13 00:58:03) [GET]
+  [4;36;1mMember Load (1.0ms)[0m   [0;1mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering members/index
+Completed in 20ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-11-13 00:58:07) [GET]
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering members/index
+Completed in 18ms (View: 4, DB: 1) | 200 OK [http://localhost/members]
+
+
+Processing ProblemSetsController#index (for 127.0.0.1 at 2010-11-13 00:58:10) [GET]
+  [4;36;1mProblemSet Load (0.5ms)[0m   [0;1mSELECT * FROM "problem_sets" [0m
+Rendering template within layouts/application
+Rendering problem_sets/index
+
+ActionView::TemplateError (The line was indented 2 levels deeper than the previous line.) on line #9 of app/views/problem_sets/index.html.haml:
+6: 
+7: - for problem_set in @problem_sets
+8:   %tr
+9:       %td=h problem_set.name
+10:   
+11:     %td= link_to 'Show', problem_set_path(problem_set)
+12:     %td= link_to 'Edit', edit_problem_set_path(problem_set)
+
+    app/views/problem_sets/index.html.haml:9
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/precompiler.rb:181:in `precompile'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/engine.rb:116:in `initialize'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/template/plugin.rb:27:in `new'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/template/plugin.rb:27:in `compile'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/problem_sets_controller.rb:8:in `index'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (57.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProblemSetsController#index (for 127.0.0.1 at 2010-11-13 00:58:56) [GET]
+  [4;35;1mProblemSet Load (0.5ms)[0m   [0mSELECT * FROM "problem_sets" [0m
+Rendering template within layouts/application
+Rendering problem_sets/index
+Completed in 18ms (View: 9, DB: 0) | 200 OK [http://localhost/problem_sets]
+
+
+Processing SubmissionsController#index (for 127.0.0.1 at 2010-11-13 00:59:02) [GET]
+  [4;36;1mSubmission Load (0.7ms)[0m   [0;1mSELECT * FROM "submissions" [0m
+Rendering template within layouts/application
+Rendering submissions/index
+
+ActionView::TemplateError (The line was indented 2 levels deeper than the previous line.) on line #12 of app/views/submissions/index.html.haml:
+9: 
+10: - for submissions in @submissions
+11:   %tr
+12:       %td=h submissions.solved
+13:       %td=h submissions.member_id
+14:       %td=h submissions.team_id
+15:       %td=h submissions.problem_id
+
+    app/views/submissions/index.html.haml:12
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/precompiler.rb:181:in `precompile'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/engine.rb:116:in `initialize'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/template/plugin.rb:27:in `new'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/template/plugin.rb:27:in `compile'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/submissions_controller.rb:8:in `index'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (94.8ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SubmissionsController#index (for 127.0.0.1 at 2010-11-13 00:59:52) [GET]
+  [4;35;1mSubmission Load (0.5ms)[0m   [0mSELECT * FROM "submissions" [0m
+Rendering template within layouts/application
+Rendering submissions/index
+Completed in 19ms (View: 10, DB: 0) | 200 OK [http://localhost/submissions]
+
+
+Processing SubmissionsController#index (for 127.0.0.1 at 2010-11-13 01:00:47) [GET]
+  [4;36;1mSubmission Load (0.7ms)[0m   [0;1mSELECT * FROM "submissions" [0m
+Rendering template within layouts/application
+Rendering submissions/index
+Completed in 30ms (View: 18, DB: 1) | 200 OK [http://localhost/submissions]
+
+
+Processing ProblemsController#index (for 127.0.0.1 at 2010-11-13 01:01:25) [GET]
+  [4;35;1mProblem Load (0.4ms)[0m   [0mSELECT * FROM "problems" [0m
+Rendering template within layouts/application
+Rendering problems/index
+
+ActionView::TemplateError (The line was indented 2 levels deeper than the previous line.) on line #11 of app/views/problems/index.html.haml:
+8: 
+9: - for problems in @problems
+10:   %tr
+11:       %td=h problems.name
+12:       %td=h problems.description
+13:       %td=h problems.problem_set_id
+14:   
+
+    app/views/problems/index.html.haml:11
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/precompiler.rb:181:in `precompile'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/engine.rb:116:in `initialize'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/template/plugin.rb:27:in `new'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/template/plugin.rb:27:in `compile'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/problems_controller.rb:8:in `index'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (204.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProblemsController#index (for 127.0.0.1 at 2010-11-13 01:01:52) [GET]
+  [4;36;1mProblem Load (0.7ms)[0m   [0;1mSELECT * FROM "problems" [0m
+Rendering template within layouts/application
+Rendering problems/index
+Completed in 28ms (View: 16, DB: 1) | 200 OK [http://localhost/Problems]
+
+
+Processing ProblemsController#new (for 127.0.0.1 at 2010-11-13 01:01:59) [GET]
+Rendering template within layouts/application
+Rendering problems/new
+Rendered problems/_form (10.9ms)
+Completed in 41ms (View: 29, DB: 0) | 200 OK [http://localhost/problems/new]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-11-13 01:02:04) [GET]
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering members/index
+Completed in 17ms (View: 4, DB: 1) | 200 OK [http://localhost/members]
+
+
+Processing MembersController#new (for 127.0.0.1 at 2010-11-13 01:02:06) [GET]
+Rendering template within layouts/application
+Rendering members/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/members/_form.haml:
+1: = error_messages_for :members 
+2: 
+3: - form_for(member) do |f| 
+4:   %p
+5:     %b Name
+6:     %br
+
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:229:in `form_for'
+    app/views/members/_form.haml:3:in `_run_haml_app47views47members47_form46haml_locals_form_member_object'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/helpers.rb:90:in `non_haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/members/new.html.haml:3:in `_run_haml_app47views47members47new46html46haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:30:in `new'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (68.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#new (for 127.0.0.1 at 2010-11-13 01:04:13) [GET]
+Rendering template within layouts/application
+Rendering members/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/members/_form.haml:
+1: = error_messages_for :members 
+2: 
+3: - form_for(member) do |f| 
+4:   %p
+5:     %b Name
+6:     %br
+
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:229:in `form_for'
+    app/views/members/_form.haml:3:in `_run_haml_app47views47members47_form46haml_locals_form_member_object'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/helpers.rb:90:in `non_haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/members/new.html.haml:3:in `_run_haml_app47views47members47new46html46haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:30:in `new'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (69.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#new (for 127.0.0.1 at 2010-11-13 01:04:16) [GET]
+Rendering template within layouts/application
+Rendering members/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/members/_form.haml:
+1: = error_messages_for :members 
+2: 
+3: - form_for(member) do |f| 
+4:   %p
+5:     %b Name
+6:     %br
+
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:229:in `form_for'
+    app/views/members/_form.haml:3:in `_run_haml_app47views47members47_form46haml_locals_form_member_object'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/helpers.rb:90:in `non_haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/members/new.html.haml:3:in `_run_haml_app47views47members47new46html46haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:30:in `new'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (72.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#new (for 127.0.0.1 at 2010-11-13 01:06:09) [GET]
+Rendering template within layouts/application
+Rendering members/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/members/_form.haml:
+1: = error_messages_for :members 
+2: 
+3: - form_for(member) do |f| 
+4:   %p
+5:     %b Name
+6:     %br
+
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:229:in `form_for'
+    app/views/members/_form.haml:3:in `_run_haml_app47views47members47_form46haml_locals_form_member_object'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/helpers.rb:90:in `non_haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/members/new.html.haml:3:in `_run_haml_app47views47members47new46html46haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:30:in `new'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (153.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#new (for 127.0.0.1 at 2010-11-13 01:06:13) [GET]
+Rendering template within layouts/application
+Rendering members/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/members/_form.haml:
+1: = error_messages_for :members 
+2: 
+3: - form_for(member) do |f| 
+4:   %p
+5:     %b Name
+6:     %br
+
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:229:in `form_for'
+    app/views/members/_form.haml:3:in `_run_haml_app47views47members47_form46haml_locals_form_member_object'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/helpers.rb:90:in `non_haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/members/new.html.haml:3:in `_run_haml_app47views47members47new46html46haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:30:in `new'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (153.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#new (for 127.0.0.1 at 2010-11-13 01:06:15) [GET]
+Rendering template within layouts/application
+Rendering members/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/members/_form.haml:
+1: = error_messages_for :members 
+2: 
+3: - form_for(member) do |f| 
+4:   %p
+5:     %b Name
+6:     %br
+
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:229:in `form_for'
+    app/views/members/_form.haml:3:in `_run_haml_app47views47members47_form46haml_locals_form_member_object'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/helpers.rb:90:in `non_haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/members/new.html.haml:3:in `_run_haml_app47views47members47new46html46haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:30:in `new'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (69.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#new (for 127.0.0.1 at 2010-11-13 01:08:21) [GET]
+Rendering template within layouts/application
+Rendering members/new
+Rendered members/_form (14.8ms)
+Completed in 52ms (View: 35, DB: 0) | 200 OK [http://localhost/members/new]
+
+
+Processing ProblemSetsController#index (for 127.0.0.1 at 2010-11-13 01:08:43) [GET]
+  [4;36;1mProblemSet Load (0.7ms)[0m   [0;1mSELECT * FROM "problem_sets" [0m
+Rendering template within layouts/application
+Rendering problem_sets/index
+Completed in 17ms (View: 4, DB: 1) | 200 OK [http://localhost/problem_sets]
+
+
+Processing ProblemSetsController#new (for 127.0.0.1 at 2010-11-13 01:08:46) [GET]
+Rendering template within layouts/application
+Rendering problem_sets/new
+
+ActionView::TemplateError (undefined local variable or method `problem_set' for #<ActionView::Base:0x7fb9367d8ab0>) on line #3 of app/views/problem_sets/new.html.haml:
+1: %h1 New problem_set
+2: 
+3: = render :partial => '/problem_sets/form', :locals => { problem_set => @problem_set }
+4: 
+5:     
+6: = link_to 'Back', problem_sets_path 
+
+    app/views/problem_sets/new.html.haml:3:in `_run_haml_app47views47problem_sets47new46html46haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/problem_sets_controller.rb:30:in `new'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (206.2ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)

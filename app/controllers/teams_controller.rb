@@ -1,4 +1,5 @@
 class TeamsController < ApplicationController
+	layout "application"
   # GET /team
   # GET /team.xml
   def index

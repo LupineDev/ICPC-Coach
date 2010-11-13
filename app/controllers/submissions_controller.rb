@@ -1,4 +1,5 @@
 class SubmissionsController < ApplicationController
+	layout "application"
   # GET /submission
   # GET /submission.xml
   def index
