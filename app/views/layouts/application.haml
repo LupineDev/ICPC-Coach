@@ -2,6 +2,7 @@
 !!!
 %html
   %head
+    = formtastic_stylesheet_link_tag
     = stylesheet_link_tag "styles"
   %body
     #page
@@ -13,6 +14,8 @@
                 = link_to "Contestants", members_path
               %li
                 = link_to "Problem Sets", problem_sets_path
+              %li
+                = link_to "Problems", problems_path
               %li
                 = link_to "Teams", teams_path
               %li

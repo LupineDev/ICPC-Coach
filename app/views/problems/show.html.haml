@@ -1,14 +1,14 @@
 %p
   %b Name:
-  =h @problems.name 
+  =h @problem.name 
 
 %p
   %b Description:
-  =h @problems.description 
+  =h @problem.description 
 
 %p
   %b Problem set:
-  =h @problems.problem_set_id 
+  =h link_to @problem.problem_set.name, problem_set_path(@problem.problem_set)
 
 
 = link_to 'Edit', edit_problem_path(@problem)

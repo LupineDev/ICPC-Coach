@@ -1,22 +1,8 @@
-= error_messages_for :member 
-
-- form_for(member) do |f| 
-  %p
-    %b Name
-    %br
-    = f.text_field :name 
-  %p
-    %b Email
-    %br
-    = f.text_field :email 
-  %p
-    %b Notes
-    %br
-    = f.text_area :notes 
-  %p
-    %b Team
-    %br
-    = f.text_field :team_id 
-
-  %p
-    = f.submit "Create"
+- semantic_form_for(member) do |f|
+  - f.inputs do
+    = f.input :name
+    = f.input :email
+    = f.input :notes
+    = f.input :team
+  - f.buttons do
+    = f.commit_button

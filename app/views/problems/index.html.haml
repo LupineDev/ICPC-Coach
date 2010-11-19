@@ -6,13 +6,12 @@
     %th Description
     %th Problem set
 
-- for problems in @problems
+- for problem in @problems
   %tr
-    %td=h problems.name
-    %td=h problems.description
-    %td=h problems.problem_set_id
+    %td=h link_to problem.name, problem_path(problem)
+    %td=h truncate(problem.description, :length => 30)
+    %td=h problem.problem_set_id
   
-    %td= link_to 'Show', problem_path(problem)
     %td= link_to 'Edit', edit_problem_path(problem)
     %td= link_to 'Destroy', problem_path(problem), :confirm => 'Are you sure?', :method => :delete, :confirm => "Are you sure?", :method => :delete
     

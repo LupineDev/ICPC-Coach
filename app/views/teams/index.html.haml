@@ -4,12 +4,12 @@
   %tr
     %th Name
 
-- for teams in @teams
+- for team in @teams
   %tr
-      %td=h teams.name
-  
+    %td=h team.name
     %td= link_to 'Show', team_path(team)
     %td= link_to 'Edit', edit_team_path(team)
     %td= link_to 'Destroy', team_path(team), :confirm => 'Are you sure?', :method => :delete, :confirm => "Are you sure?", :method => :delete
     
+%br
 = link_to 'New team', new_team_path 

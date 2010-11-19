@@ -1,0 +1,8 @@
+- unless flash.blank?
+  .flash_messages
+    - unless flash[:notice].blank?
+      %p.notice
+        = flash[:notice]
+    - unless flash[:error].blank?
+      %p.error
+        = flash[:error]

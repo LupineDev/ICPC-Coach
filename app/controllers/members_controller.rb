@@ -7,7 +7,7 @@ class MembersController < ApplicationController
 
     respond_to do |format|
       format.html # index.haml
-      format.xml  { render :xml => @members }
+      format.xml  { render :xml => @member }
     end
   end
 
@@ -18,18 +18,18 @@ class MembersController < ApplicationController
 
     respond_to do |format|
       format.html # show.haml
-      format.xml  { render :xml => @members }
+      format.xml  { render :xml => @member }
     end
   end
 
   # GET /members/new
   # GET /members/new.xml
   def new
-    @members= Member.new
+    @member= Member.new
 
     respond_to do |format|
       format.html # new.haml
-      format.xml  { render :xml => @members }
+      format.xml  { render :xml => @member }
     end
   end
 
@@ -41,16 +41,16 @@ class MembersController < ApplicationController
   # POST /members
   # POST /members.xml
   def create
-    @members = Member.new(params[:members])
+    @member = Member.new(params[:member])
 
     respond_to do |format|
-      if @members.save
+      if @member.save
         flash[:notice] = 'Member was successfully created.'
-        format.html { redirect_to(member_path(@members)) }
-        format.xml  { render :xml => @members, :status => :created, :location => @members }
+        format.html { redirect_to(member_path(@member)) }
+        format.xml  { render :xml => @member, :status => :created, :location => @member }
       else
         format.html { render :action => "new" }
-        format.xml  { render :xml => @members.errors, :status => :unprocessable_entity }
+        format.xml  { render :xml => @member.errors, :status => :unprocessable_entity }
       end
     end
   end
@@ -58,16 +58,16 @@ class MembersController < ApplicationController
   # PUT /members/1
   # PUT /members/1.xml
   def update
-    @members = Member.find(params[:id])
+    @member = Member.find(params[:id])
 
     respond_to do |format|
-      if @members.update_attributes(params[:members])
+      if @member.update_attributes(params[:member])
         flash[:notice] = 'Member was successfully updated.'
-        format.html { redirect_to(member_path(@members)) }
+        format.html { redirect_to(member_path(@member)) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
-        format.xml  { render :xml => @members.errors, :status => :unprocessable_entity }
+        format.xml  { render :xml => @member.errors, :status => :unprocessable_entity }
       end
     end
   end

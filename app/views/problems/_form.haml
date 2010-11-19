@@ -1,18 +1,7 @@
-= error_messages_for :problems 
-
-- form_for(problem) do |f| 
-  %p
-    %b Name
-    %br
-    = f.text_field :name 
-  %p
-    %b Description
-    %br
-    = f.text_area :description 
-  %p
-    %b Problem set
-    %br
-    = f.text_field :problem_set_id 
-
-  %p
-    = f.submit "Create"
+- semantic_form_for(problem) do |f|
+  - f.inputs do
+    = f.input :name
+    = f.input :description
+    = f.input :problem_set
+  - f.buttons do
+    = f.commit_button

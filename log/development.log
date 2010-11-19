@@ -620,3 +620,1752 @@ ActionView::TemplateError (undefined local variable or method `problem_set' for 
 Rendered rescues/_trace (206.2ms)
 Rendered rescues/_request_and_response (0.6ms)
 Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-11-18 23:26:44) [GET]
+  [4;36;1mMember Load (1.8ms)[0m   [0;1mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering members/index
+Completed in 167ms (View: 109, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-11-18 23:26:52) [GET]
+  [4;35;1mMember Load (0.5ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering members/index
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing ProblemSetsController#index (for 127.0.0.1 at 2010-11-18 23:27:00) [GET]
+  [4;36;1mProblemSet Load (0.5ms)[0m   [0;1mSELECT * FROM "problem_sets" [0m
+Rendering template within layouts/application
+Rendering problem_sets/index
+Completed in 22ms (View: 13, DB: 0) | 200 OK [http://localhost/problem_sets]
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2010-11-18 23:27:04) [GET]
+
+NameError (uninitialized constant TeamsController::Teams):
+  app/controllers/teams_controller.rb:6:in `index'
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (118.5ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2010-11-18 23:28:04) [GET]
+  [4;35;1mTeam Load (0.5ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+
+ActionView::TemplateError (The line was indented 2 levels deeper than the previous line.) on line #9 of app/views/teams/index.html.haml:
+6: 
+7: - for teams in @teams
+8:   %tr
+9:       %td=h teams.name
+10:   
+11:     %td= link_to 'Show', team_path(team)
+12:     %td= link_to 'Edit', edit_team_path(team)
+
+    app/views/teams/index.html.haml:9
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/precompiler.rb:181:in `precompile'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/engine.rb:116:in `initialize'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/template/plugin.rb:27:in `new'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/template/plugin.rb:27:in `compile'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/teams_controller.rb:8:in `index'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (60.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2010-11-18 23:28:24) [GET]
+  [4;36;1mTeam Load (0.5ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+
+ActionView::TemplateError (The line was indented 2 levels deeper than the previous line.) on line #9 of app/views/teams/index.html.haml:
+6: 
+7: - for teams in @teams
+8:   %tr
+9:       %td=h teams.name
+10:   
+11:     %td= link_to 'Show', team_path(team)
+12:     %td= link_to 'Edit', edit_team_path(team)
+
+    app/views/teams/index.html.haml:9
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/precompiler.rb:181:in `precompile'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/engine.rb:116:in `initialize'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/template/plugin.rb:27:in `new'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/template/plugin.rb:27:in `compile'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/teams_controller.rb:8:in `index'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (69.4ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2010-11-18 23:28:59) [GET]
+  [4;35;1mTeam Load (0.5ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+Completed in 23ms (View: 14, DB: 0) | 200 OK [http://localhost/teams]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:28:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:28:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:29:35) [GET]
+
+LoadError (Expected /home/lupinedev/Work/LupineDev/ICPC-Coach/app/controllers/teams_controller.rb to define TeamsController):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (37.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:29:44) [GET]
+
+LoadError (Expected /home/lupinedev/Work/LupineDev/ICPC-Coach/app/controllers/teams_controller.rb to define TeamsController):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (115.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2010-11-18 23:29:58) [GET]
+
+NameError (uninitialized constant TeamsController::Teams):
+  app/controllers/teams_controller.rb:6:in `index'
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (41.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:30:12) [GET]
+
+LoadError (Expected /home/lupinedev/Work/LupineDev/ICPC-Coach/app/controllers/teams_controller.rb to define TeamsController):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (34.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:30:15) [GET]
+
+LoadError (Expected /home/lupinedev/Work/LupineDev/ICPC-Coach/app/controllers/teams_controller.rb to define TeamsController):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (35.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2010-11-18 23:30:44) [GET]
+  [4;36;1mTeam Load (0.5ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/teams]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:30:44) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:30:44) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProblemSetsController#index (for 127.0.0.1 at 2010-11-18 23:30:47) [GET]
+  [4;35;1mProblemSet Load (0.4ms)[0m   [0mSELECT * FROM "problem_sets" [0m
+Rendering template within layouts/application
+Rendering problem_sets/index
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/problem_sets]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:30:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:30:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-11-18 23:30:48) [GET]
+  [4;36;1mMember Load (0.5ms)[0m   [0;1mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering members/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:30:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:30:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2010-11-18 23:30:50) [GET]
+  [4;35;1mTeam Load (0.4ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/teams]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:30:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:30:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SubmissionsController#index (for 127.0.0.1 at 2010-11-18 23:30:51) [GET]
+  [4;36;1mSubmission Load (0.9ms)[0m   [0;1mSELECT * FROM "submissions" [0m
+Rendering template within layouts/application
+Rendering submissions/index
+Completed in 46ms (View: 17, DB: 1) | 200 OK [http://localhost/submissions]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:30:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:30:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SubmissionsController#index (for 127.0.0.1 at 2010-11-18 23:30:53) [GET]
+  [4;35;1mSubmission Load (0.5ms)[0m   [0mSELECT * FROM "submissions" [0m
+Rendering template within layouts/application
+Rendering submissions/index
+Completed in 85ms (View: 3, DB: 0) | 200 OK [http://localhost/submissions]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:30:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:30:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2010-11-18 23:30:54) [GET]
+  [4;36;1mTeam Load (0.6ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+Completed in 11ms (View: 3, DB: 1) | 200 OK [http://localhost/teams]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:30:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:30:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TeamsController#new (for 127.0.0.1 at 2010-11-18 23:30:59) [GET]
+Rendering template within layouts/application
+Rendering teams/new
+Rendered teams/_form (6.5ms)
+Completed in 101ms (View: 20, DB: 0) | 200 OK [http://localhost/teams/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:30:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:30:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TeamsController#create (for 127.0.0.1 at 2010-11-18 23:31:09) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"muUKkHnnu5Rwk0/c0x7fw48fA+LACUj+kUUqFL1sw/s=", "team"=>{"name"=>"NerfHerders"}}
+  [4;35;1mTeam Create (0.8ms)[0m   [0mINSERT INTO "teams" ("name", "created_at", "updated_at") VALUES('NerfHerders', '2010-11-19 09:31:09', '2010-11-19 09:31:09')[0m
+Redirected to http://localhost:3000/teams/1
+Completed in 198ms (DB: 1) | 302 Found [http://localhost/teams]
+
+
+Processing TeamsController#show (for 127.0.0.1 at 2010-11-18 23:31:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTeam Load (0.4ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering teams/show
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #3 of app/views/teams/show.html.haml:
+1: %p
+2:   %b Name:
+3:   =h @teams.name 
+4: 
+5: 
+6: = link_to 'Edit', edit_team_path(@team)
+
+    app/views/teams/show.html.haml:3:in `_run_haml_app47views47teams47show46html46haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/teams_controller.rb:19:in `show'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (57.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TeamsController#show (for 127.0.0.1 at 2010-11-18 23:31:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTeam Load (0.3ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering teams/show
+
+ActionView::TemplateError (Missing layout layouts/_flashes.erb in view path app/views) on line #23 of app/views/layouts/application.haml:
+20:                 = link_to "Submissions", submissions_path
+21:       #main
+22:         #content
+23:           = render :partial => 'layouts/flashes' unless flash.empty?
+24:           %section
+25:             = yield
+26:       #footer
+
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/helpers.rb:90:in `non_haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/layouts/application.haml:23:in `_run_haml_app47views47layouts47application46haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/teams_controller.rb:19:in `show'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (151.7ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TeamsController#show (for 127.0.0.1 at 2010-11-18 23:36:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTeam Load (0.3ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering teams/show
+Completed in 15ms (View: 4, DB: 0) | 200 OK [http://localhost/teams/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:36:44) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:36:44) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2010-11-18 23:36:51) [GET]
+  [4;35;1mTeam Load (0.6ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+
+ActionView::TemplateError (undefined local variable or method `team' for #<ActionView::Base:0x7ff8d6e97678>) on line #10 of app/views/teams/index.html.haml:
+7: - for teams in @teams
+8:   %tr
+9:     %td=h teams.name
+10:     %td= link_to 'Show', team_path(team)
+11:     %td= link_to 'Edit', edit_team_path(team)
+12:     %td= link_to 'Destroy', team_path(team), :confirm => 'Are you sure?', :method => :delete, :confirm => "Are you sure?", :method => :delete
+13:     
+
+    app/views/teams/index.html.haml:10:in `_run_haml_app47views47teams47index46html46haml'
+    app/views/teams/index.html.haml:7:in `each'
+    app/views/teams/index.html.haml:7:in `_run_haml_app47views47teams47index46html46haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/teams_controller.rb:8:in `index'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (60.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2010-11-18 23:36:57) [GET]
+  [4;36;1mTeam Load (0.6ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+
+ActionView::TemplateError (undefined local variable or method `team' for #<ActionView::Base:0x7ff8d70394b8>) on line #10 of app/views/teams/index.html.haml:
+7: - for teams in @teams
+8:   %tr
+9:     %td=h teams.name
+10:     %td= link_to 'Show', team_path(team)
+11:     %td= link_to 'Edit', edit_team_path(team)
+12:     %td= link_to 'Destroy', team_path(team), :confirm => 'Are you sure?', :method => :delete, :confirm => "Are you sure?", :method => :delete
+13:     
+
+    app/views/teams/index.html.haml:10:in `_run_haml_app47views47teams47index46html46haml'
+    app/views/teams/index.html.haml:7:in `each'
+    app/views/teams/index.html.haml:7:in `_run_haml_app47views47teams47index46html46haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/teams_controller.rb:8:in `index'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (147.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2010-11-18 23:37:25) [GET]
+  [4;35;1mTeam Load (0.6ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+
+ActionView::TemplateError (undefined local variable or method `teams' for #<ActionView::Base:0x7ff8d73089c8>) on line #9 of app/views/teams/index.html.haml:
+6: 
+7: - for team in @teams
+8:   %tr
+9:     %td=h teams.name
+10:     %td= link_to 'Show', team_path(team)
+11:     %td= link_to 'Edit', edit_team_path(team)
+12:     %td= link_to 'Destroy', team_path(team), :confirm => 'Are you sure?', :method => :delete, :confirm => "Are you sure?", :method => :delete
+
+    app/views/teams/index.html.haml:9:in `_run_haml_app47views47teams47index46html46haml'
+    app/views/teams/index.html.haml:7:in `each'
+    app/views/teams/index.html.haml:7:in `_run_haml_app47views47teams47index46html46haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/teams_controller.rb:8:in `index'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (57.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2010-11-18 23:37:27) [GET]
+  [4;36;1mTeam Load (1.1ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+
+ActionView::TemplateError (undefined local variable or method `teams' for #<ActionView::Base:0x7ff8d6d01bd8>) on line #9 of app/views/teams/index.html.haml:
+6: 
+7: - for team in @teams
+8:   %tr
+9:     %td=h teams.name
+10:     %td= link_to 'Show', team_path(team)
+11:     %td= link_to 'Edit', edit_team_path(team)
+12:     %td= link_to 'Destroy', team_path(team), :confirm => 'Are you sure?', :method => :delete, :confirm => "Are you sure?", :method => :delete
+
+    app/views/teams/index.html.haml:9:in `_run_haml_app47views47teams47index46html46haml'
+    app/views/teams/index.html.haml:7:in `each'
+    app/views/teams/index.html.haml:7:in `_run_haml_app47views47teams47index46html46haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/teams_controller.rb:8:in `index'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (59.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2010-11-18 23:38:11) [GET]
+  [4;35;1mTeam Load (0.6ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+Completed in 21ms (View: 13, DB: 1) | 200 OK [http://localhost/teams]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:38:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:38:12) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2010-11-18 23:38:45) [GET]
+  [4;36;1mTeam Load (0.6ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+Completed in 21ms (View: 12, DB: 1) | 200 OK [http://localhost/teams]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:38:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:38:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TeamsController#new (for 127.0.0.1 at 2010-11-18 23:41:21) [GET]
+Rendering template within layouts/application
+Rendering teams/new
+Rendered teams/_form (81.3ms)
+Completed in 97ms (View: 88, DB: 0) | 200 OK [http://localhost/teams/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:41:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:41:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2010-11-18 23:41:29) [GET]
+  [4;35;1mTeam Load (0.6ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+Completed in 15ms (View: 6, DB: 1) | 200 OK [http://localhost/teams]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:41:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:41:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TeamsController#edit (for 127.0.0.1 at 2010-11-18 23:41:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTeam Load (0.3ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering teams/edit
+Rendered teams/_form (9.5ms)
+Completed in 100ms (View: 19, DB: 0) | 200 OK [http://localhost/teams/1/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:41:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:41:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProblemSetsController#index (for 127.0.0.1 at 2010-11-18 23:41:48) [GET]
+  [4;35;1mProblemSet Load (0.4ms)[0m   [0mSELECT * FROM "problem_sets" [0m
+Rendering template within layouts/application
+Rendering problem_sets/index
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/problem_sets]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:41:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:41:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProblemSetsController#new (for 127.0.0.1 at 2010-11-18 23:41:51) [GET]
+Rendering template within layouts/application
+Rendering problem_sets/new
+
+ActionView::TemplateError (undefined local variable or method `problem_set' for #<ActionView::Base:0x7ff8d73f4ff8>) on line #3 of app/views/problem_sets/new.html.haml:
+1: %h1 New problem_set
+2: 
+3: = render :partial => '/problem_sets/form', :locals => { problem_set => @problem_set }
+4: 
+5:     
+6: = link_to 'Back', problem_sets_path 
+
+    app/views/problem_sets/new.html.haml:3:in `_run_haml_app47views47problem_sets47new46html46haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/problem_sets_controller.rb:30:in `new'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (55.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProblemSetsController#new (for 127.0.0.1 at 2010-11-18 23:42:52) [GET]
+Rendering template within layouts/application
+Rendering problem_sets/new
+Rendered problem_sets/_form (4.9ms)
+Completed in 25ms (View: 16, DB: 0) | 200 OK [http://localhost/problem_sets/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:42:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:42:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProblemSetsController#create (for 127.0.0.1 at 2010-11-18 23:43:17) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"muUKkHnnu5Rwk0/c0x7fw48fA+LACUj+kUUqFL1sw/s=", "problem_set"=>{"name"=>"Pacific Northwest 2009 (Star Wars)"}}
+  [4;36;1mProblemSet Create (1.0ms)[0m   [0;1mINSERT INTO "problem_sets" ("name", "created_at", "updated_at") VALUES('Pacific Northwest 2009 (Star Wars)', '2010-11-19 09:43:17', '2010-11-19 09:43:17')[0m
+Redirected to http://localhost:3000/problem_sets/1
+Completed in 129ms (DB: 1) | 302 Found [http://localhost/problem_sets]
+
+
+Processing ProblemSetsController#show (for 127.0.0.1 at 2010-11-18 23:43:17) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProblemSet Load (4.2ms)[0m   [0mSELECT * FROM "problem_sets" WHERE ("problem_sets"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering problem_sets/show
+Rendered layouts/_flashes (2.0ms)
+Completed in 30ms (View: 16, DB: 4) | 200 OK [http://localhost/problem_sets/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:43:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:43:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProblemSetsController#edit (for 127.0.0.1 at 2010-11-18 23:43:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProblemSet Load (0.3ms)[0m   [0;1mSELECT * FROM "problem_sets" WHERE ("problem_sets"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering problem_sets/edit
+Rendered problem_sets/_form (4.0ms)
+Completed in 23ms (View: 14, DB: 0) | 200 OK [http://localhost/problem_sets/1/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:43:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:43:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProblemSetsController#edit (for 127.0.0.1 at 2010-11-18 23:44:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProblemSet Load (0.3ms)[0m   [0mSELECT * FROM "problem_sets" WHERE ("problem_sets"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering problem_sets/edit
+Rendered problem_sets/_form (9.6ms)
+Completed in 26ms (View: 17, DB: 0) | 200 OK [http://localhost/problem_sets/1/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:44:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:44:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProblemSetsController#update (for 127.0.0.1 at 2010-11-18 23:44:57) [PUT]
+  Parameters: {"commit"=>"Update Problem set", "authenticity_token"=>"muUKkHnnu5Rwk0/c0x7fw48fA+LACUj+kUUqFL1sw/s=", "problem_set"=>{"name"=>"Pacific Northwest 2009 (Star Wars)"}, "id"=>"1"}
+  [4;36;1mProblemSet Load (0.3ms)[0m   [0;1mSELECT * FROM "problem_sets" WHERE ("problem_sets"."id" = 1) [0m
+Redirected to http://localhost:3000/problem_sets/1
+Completed in 13ms (DB: 0) | 302 Found [http://localhost/problem_sets/1]
+
+
+Processing ProblemSetsController#show (for 127.0.0.1 at 2010-11-18 23:44:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProblemSet Load (0.3ms)[0m   [0mSELECT * FROM "problem_sets" WHERE ("problem_sets"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering problem_sets/show
+Rendered layouts/_flashes (0.2ms)
+Completed in 16ms (View: 5, DB: 0) | 200 OK [http://localhost/problem_sets/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:44:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:44:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProblemSetsController#index (for 127.0.0.1 at 2010-11-18 23:45:01) [GET]
+  [4;36;1mProblemSet Load (0.6ms)[0m   [0;1mSELECT * FROM "problem_sets" [0m
+Rendering template within layouts/application
+Rendering problem_sets/index
+Completed in 14ms (View: 6, DB: 1) | 200 OK [http://localhost/problem_sets]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:45:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:45:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProblemSetsController#index (for 127.0.0.1 at 2010-11-18 23:48:16) [GET]
+  [4;35;1mProblemSet Load (0.6ms)[0m   [0mSELECT * FROM "problem_sets" [0m
+Rendering template within layouts/application
+Rendering problem_sets/index
+Completed in 14ms (View: 6, DB: 1) | 200 OK [http://localhost/problem_sets]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:48:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:48:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProblemSetsController#index (for 127.0.0.1 at 2010-11-18 23:49:06) [GET]
+  [4;36;1mProblemSet Load (0.6ms)[0m   [0;1mSELECT * FROM "problem_sets" [0m
+Rendering template within layouts/application
+Rendering problem_sets/index
+Completed in 25ms (View: 16, DB: 1) | 200 OK [http://localhost/problem_sets]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:49:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:49:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProblemsController#index (for 127.0.0.1 at 2010-11-18 23:49:07) [GET]
+  [4;35;1mProblem Load (0.4ms)[0m   [0mSELECT * FROM "problems" [0m
+Rendering template within layouts/application
+Rendering problems/index
+Completed in 21ms (View: 13, DB: 0) | 200 OK [http://localhost/problems]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:49:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:49:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProblemsController#new (for 127.0.0.1 at 2010-11-18 23:49:10) [GET]
+Rendering template within layouts/application
+Rendering problems/new
+
+ActionView::TemplateError (undefined method `problem_set' for #<Problem:0x7ff8d7333c68>) on line #5 of app/views/problems/_form.haml:
+2:   - f.inputs do
+3:     = f.input :name
+4:     = f.input :description
+5:     = f.input :problem_set
+6:   - f.buttons do
+7:     = f.commit_button
+
+    formtastic (0.9.8) rails/./lib/formtastic.rb:571:in `send'
+    formtastic (0.9.8) rails/./lib/formtastic.rb:571:in `basic_input_helper'
+    formtastic (0.9.8) rails/./lib/formtastic.rb:576:in `string_input'
+    formtastic (0.9.8) rails/./lib/formtastic.rb:1186:in `send'
+    formtastic (0.9.8) rails/./lib/formtastic.rb:1186:in `inline_input_for'
+    formtastic (0.9.8) rails/./lib/formtastic.rb:105:in `send'
+    formtastic (0.9.8) rails/./lib/formtastic.rb:105:in `input'
+    formtastic (0.9.8) rails/./lib/formtastic.rb:104:in `map'
+    formtastic (0.9.8) rails/./lib/formtastic.rb:104:in `input'
+    app/views/problems/_form.haml:5
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/helpers.rb:343:in `call'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/helpers.rb:343:in `capture_haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/helpers.rb:566:in `with_haml_buffer'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/helpers.rb:339:in `capture_haml'
+    formtastic (0.9.8) rails/./lib/formtastic.rb:1267:in `field_set_and_list_wrapping'
+    formtastic (0.9.8) rails/./lib/formtastic.rb:266:in `inputs'
+    app/views/problems/_form.haml:2
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:223:in `call'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:223
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/helpers.rb:588:in `call'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/helpers.rb:588:in `haml_bind_proc'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:229:in `form_for'
+    formtastic (0.9.8) rails/./lib/formtastic.rb:1703:in `semantic_form_for'
+    formtastic (0.9.8) rails/./lib/formtastic.rb:1681:in `with_custom_field_error_proc'
+    formtastic (0.9.8) rails/./lib/formtastic.rb:1702:in `semantic_form_for'
+    app/views/problems/_form.haml:1:in `_run_haml_app47views47problems47_form46haml_locals_form_object_problem'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/helpers.rb:90:in `non_haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/problems/new.html.haml:3:in `_run_haml_app47views47problems47new46html46haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/problems_controller.rb:30:in `new'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (180.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProblemsController#new (for 127.0.0.1 at 2010-11-18 23:50:40) [GET]
+Rendering template within layouts/application
+Rendering problems/new
+  [4;36;1mProblemSet Load (0.4ms)[0m   [0;1mSELECT * FROM "problem_sets" [0m
+Rendered problems/_form (18.1ms)
+Completed in 30ms (View: 22, DB: 0) | 200 OK [http://localhost/problems/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:50:41) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:50:41) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProblemsController#create (for 127.0.0.1 at 2010-11-18 23:52:02) [POST]
+  Parameters: {"commit"=>"Create Problem", "authenticity_token"=>"muUKkHnnu5Rwk0/c0x7fw48fA+LACUj+kUUqFL1sw/s=", "problem"=>{"name"=>"A: Navicomputer", "problem_set_id"=>"1", "description"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas mauris sed libero venenatis non iaculis lacus sodales. Cras turpis magna, congue eu aliquet vel, interdum in libero. Maecenas iaculis mollis dui, sed pulvinar mi accumsan in. Aenean rhoncus aliquam consequat. Ut et felis neque, quis congue lorem. In hac habitasse platea dictumst. In non sapien orci, nec rutrum dolor. Aenean tortor tortor, egestas non laoreet sit amet, malesuada lobortis nibh. Morbi in sapien eu risus placerat vehicula. Donec faucibus turpis ut ligula convallis adipiscing. Suspendisse magna libero, sagittis eu dapibus a, congue non leo. Proin bibendum euismod facilisis. Sed suscipit ligula vel dui vestibulum ac sollicitudin nunc scelerisque. Morbi diam sem, volutpat ac molestie id, tempor quis dolor. Nullam at tortor tellus, non auctor tortor."}}
+  [4;35;1mProblem Create (0.8ms)[0m   [0mINSERT INTO "problems" ("name", "created_at", "problem_set_id", "updated_at", "description") VALUES('A: Navicomputer', '2010-11-19 09:52:02', 1, '2010-11-19 09:52:02', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas mauris sed libero venenatis non iaculis lacus sodales. Cras turpis magna, congue eu aliquet vel, interdum in libero. Maecenas iaculis mollis dui, sed pulvinar mi accumsan in. Aenean rhoncus aliquam consequat. Ut et felis neque, quis congue lorem. In hac habitasse platea dictumst. In non sapien orci, nec rutrum dolor. Aenean tortor tortor, egestas non laoreet sit amet, malesuada lobortis nibh. Morbi in sapien eu risus placerat vehicula. Donec faucibus turpis ut ligula convallis adipiscing. Suspendisse magna libero, sagittis eu dapibus a, congue non leo. Proin bibendum euismod facilisis. Sed suscipit ligula vel dui vestibulum ac sollicitudin nunc scelerisque. Morbi diam sem, volutpat ac molestie id, tempor quis dolor. Nullam at tortor tellus, non auctor tortor.')[0m
+Redirected to http://localhost:3000/problems/1
+Completed in 196ms (DB: 1) | 302 Found [http://localhost/problems]
+
+
+Processing ProblemsController#show (for 127.0.0.1 at 2010-11-18 23:52:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProblem Load (0.6ms)[0m   [0;1mSELECT * FROM "problems" WHERE ("problems"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering problems/show
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #3 of app/views/problems/show.html.haml:
+1: %p
+2:   %b Name:
+3:   =h @problems.name 
+4: 
+5: %p
+6:   %b Description:
+
+    app/views/problems/show.html.haml:3:in `_run_haml_app47views47problems47show46html46haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/problems_controller.rb:19:in `show'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (55.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProblemsController#show (for 127.0.0.1 at 2010-11-18 23:53:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProblem Load (0.4ms)[0m   [0mSELECT * FROM "problems" WHERE ("problems"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering problems/show
+Rendered layouts/_flashes (75.3ms)
+Completed in 96ms (View: 87, DB: 0) | 200 OK [http://localhost/problems/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:53:04) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:53:04) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProblemsController#show (for 127.0.0.1 at 2010-11-18 23:54:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProblem Load (0.8ms)[0m   [0;1mSELECT * FROM "problems" WHERE ("problems"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering problems/show
+  [4;35;1mProblemSet Load (0.3ms)[0m   [0mSELECT * FROM "problem_sets" WHERE ("problem_sets"."id" = 1) [0m
+Completed in 28ms (View: 17, DB: 1) | 200 OK [http://localhost/problems/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:54:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:54:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProblemSetsController#show (for 127.0.0.1 at 2010-11-18 23:54:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProblemSet Load (0.3ms)[0m   [0;1mSELECT * FROM "problem_sets" WHERE ("problem_sets"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering problem_sets/show
+Completed in 15ms (View: 4, DB: 0) | 200 OK [http://localhost/problem_sets/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:54:12) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:54:12) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProblemSetsController#edit (for 127.0.0.1 at 2010-11-18 23:54:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProblemSet Load (0.3ms)[0m   [0mSELECT * FROM "problem_sets" WHERE ("problem_sets"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering problem_sets/edit
+Rendered problem_sets/_form (8.5ms)
+Completed in 21ms (View: 12, DB: 0) | 200 OK [http://localhost/problem_sets/1/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:54:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:54:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProblemsController#edit (for 127.0.0.1 at 2010-11-18 23:54:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProblem Load (0.3ms)[0m   [0;1mSELECT * FROM "problems" WHERE ("problems"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering problems/edit
+  [4;35;1mProblemSet Load (0.4ms)[0m   [0mSELECT * FROM "problem_sets" [0m
+Rendered problems/_form (20.5ms)
+Completed in 40ms (View: 31, DB: 1) | 200 OK [http://localhost/problems/1/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:54:33) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:54:33) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProblemsController#index (for 127.0.0.1 at 2010-11-18 23:54:49) [GET]
+  [4;36;1mProblem Load (0.6ms)[0m   [0;1mSELECT * FROM "problems" [0m
+Rendering template within layouts/application
+Rendering problems/index
+
+ActionView::TemplateError (undefined local variable or method `problem' for #<ActionView::Base:0x7ff8d6f8a3a0>) on line #15 of app/views/problems/index.html.haml:
+12:     %td=h problems.description
+13:     %td=h problems.problem_set_id
+14:   
+15:     %td= link_to 'Show', problem_path(problem)
+16:     %td= link_to 'Edit', edit_problem_path(problem)
+17:     %td= link_to 'Destroy', problem_path(problem), :confirm => 'Are you sure?', :method => :delete, :confirm => "Are you sure?", :method => :delete
+18:     
+
+    app/views/problems/index.html.haml:15:in `_run_haml_app47views47problems47index46html46haml'
+    app/views/problems/index.html.haml:9:in `each'
+    app/views/problems/index.html.haml:9:in `_run_haml_app47views47problems47index46html46haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/problems_controller.rb:8:in `index'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (70.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProblemsController#index (for 127.0.0.1 at 2010-11-18 23:55:12) [GET]
+  [4;35;1mProblem Load (0.7ms)[0m   [0mSELECT * FROM "problems" [0m
+Rendering template within layouts/application
+Rendering problems/index
+
+ActionView::TemplateError (undefined local variable or method `problems' for #<ActionView::Base:0x7ff8d7069550>) on line #11 of app/views/problems/index.html.haml:
+8: 
+9: - for problem in @problems
+10:   %tr
+11:     %td=h problems.name
+12:     %td=h problems.description
+13:     %td=h problems.problem_set_id
+14:   
+
+    app/views/problems/index.html.haml:11:in `_run_haml_app47views47problems47index46html46haml'
+    app/views/problems/index.html.haml:9:in `each'
+    app/views/problems/index.html.haml:9:in `_run_haml_app47views47problems47index46html46haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/problems_controller.rb:8:in `index'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (141.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProblemsController#index (for 127.0.0.1 at 2010-11-18 23:55:30) [GET]
+  [4;36;1mProblem Load (0.7ms)[0m   [0;1mSELECT * FROM "problems" [0m
+Rendering template within layouts/application
+Rendering problems/index
+Completed in 22ms (View: 14, DB: 1) | 200 OK [http://localhost/problems]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:55:30) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:55:30) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProblemsController#index (for 127.0.0.1 at 2010-11-18 23:56:25) [GET]
+  [4;35;1mProblem Load (0.8ms)[0m   [0mSELECT * FROM "problems" [0m
+Rendering template within layouts/application
+Rendering problems/index
+Completed in 22ms (View: 14, DB: 1) | 200 OK [http://localhost/problems]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:56:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:56:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProblemsController#index (for 127.0.0.1 at 2010-11-18 23:57:02) [GET]
+  [4;36;1mProblem Load (0.7ms)[0m   [0;1mSELECT * FROM "problems" [0m
+Rendering template within layouts/application
+Rendering problems/index
+Completed in 22ms (View: 14, DB: 1) | 200 OK [http://localhost/problems]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:57:02) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:57:02) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2010-11-18 23:57:21) [GET]
+  [4;35;1mTeam Load (0.6ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+Completed in 84ms (View: 75, DB: 1) | 200 OK [http://localhost/teams]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:57:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:57:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TeamsController#new (for 127.0.0.1 at 2010-11-18 23:57:27) [GET]
+Rendering template within layouts/application
+Rendering teams/new
+Rendered teams/_form (7.6ms)
+Completed in 21ms (View: 11, DB: 0) | 200 OK [http://localhost/teams/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:57:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:57:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-11-18 23:57:31) [GET]
+  [4;36;1mMember Load (0.5ms)[0m   [0;1mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering members/index
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://localhost/members]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:57:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:57:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MembersController#new (for 127.0.0.1 at 2010-11-18 23:58:37) [GET]
+Rendering template within layouts/application
+Rendering members/new
+Rendered members/_form (8.5ms)
+Completed in 30ms (View: 21, DB: 0) | 200 OK [http://localhost/members/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:58:37) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-18 23:58:37) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MembersController#new (for 127.0.0.1 at 2010-11-19 00:00:10) [GET]
+Rendering template within layouts/application
+Rendering members/new
+
+ActionView::TemplateError (undefined method `team' for #<Member:0x7ff8d7356e98>) on line #6 of app/views/members/_form.haml:
+3:     = f.input :name
+4:     = f.input :email
+5:     = f.input :notes
+6:     = f.input :team
+7:   - f.buttons do
+8:     = f.commit_button
+9: - form_for(member) do |f| 
+
+    formtastic (0.9.8) rails/./lib/formtastic.rb:571:in `send'
+    formtastic (0.9.8) rails/./lib/formtastic.rb:571:in `basic_input_helper'
+    formtastic (0.9.8) rails/./lib/formtastic.rb:576:in `string_input'
+    formtastic (0.9.8) rails/./lib/formtastic.rb:1186:in `send'
+    formtastic (0.9.8) rails/./lib/formtastic.rb:1186:in `inline_input_for'
+    formtastic (0.9.8) rails/./lib/formtastic.rb:105:in `send'
+    formtastic (0.9.8) rails/./lib/formtastic.rb:105:in `input'
+    formtastic (0.9.8) rails/./lib/formtastic.rb:104:in `map'
+    formtastic (0.9.8) rails/./lib/formtastic.rb:104:in `input'
+    app/views/members/_form.haml:6
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/helpers.rb:343:in `call'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/helpers.rb:343:in `capture_haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/helpers.rb:566:in `with_haml_buffer'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/helpers.rb:339:in `capture_haml'
+    formtastic (0.9.8) rails/./lib/formtastic.rb:1267:in `field_set_and_list_wrapping'
+    formtastic (0.9.8) rails/./lib/formtastic.rb:266:in `inputs'
+    app/views/members/_form.haml:2
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:223:in `call'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:223
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/helpers.rb:588:in `call'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/helpers.rb:588:in `haml_bind_proc'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:229:in `form_for'
+    formtastic (0.9.8) rails/./lib/formtastic.rb:1703:in `semantic_form_for'
+    formtastic (0.9.8) rails/./lib/formtastic.rb:1681:in `with_custom_field_error_proc'
+    formtastic (0.9.8) rails/./lib/formtastic.rb:1702:in `semantic_form_for'
+    app/views/members/_form.haml:1:in `_run_haml_app47views47members47_form46haml_locals_form_member_object'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/lib/haml/helpers.rb:90:in `non_haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/members/new.html.haml:3:in `_run_haml_app47views47members47new46html46haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:30:in `new'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (174.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#new (for 127.0.0.1 at 2010-11-19 00:00:56) [GET]
+Rendering template within layouts/application
+Rendering members/new
+  [4;35;1mTeam Load (0.4ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendered members/_form (24.1ms)
+Completed in 38ms (View: 27, DB: 0) | 200 OK [http://localhost/members/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 00:00:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 00:00:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MembersController#create (for 127.0.0.1 at 2010-11-19 00:01:43) [POST]
+  Parameters: {"commit"=>"Create Member", "authenticity_token"=>"muUKkHnnu5Rwk0/c0x7fw48fA+LACUj+kUUqFL1sw/s=", "member"=>{"name"=>"John Doe", "notes"=>"John Doe is an awesome problem solver!", "team_id"=>"1", "email"=>"fake@gmail.com"}}
+  [4;36;1mMember Create (0.9ms)[0m   [0;1mINSERT INTO "members" ("name", "created_at", "notes", "updated_at", "team_id", "email") VALUES(NULL, '2010-11-19 10:01:43', NULL, '2010-11-19 10:01:43', NULL, NULL)[0m
+Redirected to http://localhost:3000/members/1
+Completed in 204ms (DB: 1) | 302 Found [http://localhost/members]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-11-19 00:01:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMember Load (0.3ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering members/show
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #3 of app/views/members/show.html.haml:
+1: %p
+2:   %b Name:
+3:   =h @members.name 
+4: 
+5: %p
+6:   %b Email:
+
+    app/views/members/show.html.haml:3:in `_run_haml_app47views47members47show46html46haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:19:in `show'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (56.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-11-19 00:02:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMember Load (0.3ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering members/show
+Rendered layouts/_flashes (0.2ms)
+Completed in 103ms (View: 14, DB: 0) | 200 OK [http://localhost/members/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 00:02:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 00:02:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MembersController#edit (for 127.0.0.1 at 2010-11-19 00:02:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMember Load (0.4ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering members/edit
+  [4;36;1mTeam Load (0.4ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendered members/_form (21.4ms)
+Completed in 43ms (View: 33, DB: 1) | 200 OK [http://localhost/members/1/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 00:02:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 00:02:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MembersController#update (for 127.0.0.1 at 2010-11-19 00:02:55) [PUT]
+  Parameters: {"commit"=>"Update Member", "authenticity_token"=>"muUKkHnnu5Rwk0/c0x7fw48fA+LACUj+kUUqFL1sw/s=", "member"=>{"name"=>"John Doe", "notes"=>"John Doe is an awesome programmer!", "team_id"=>"1", "email"=>"fake@gmail.com"}, "id"=>"1"}
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."id" = 1) [0m
+Redirected to http://localhost:3000/members/1
+Completed in 14ms (DB: 1) | 302 Found [http://localhost/members/1]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-11-19 00:02:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMember Load (0.4ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering members/show
+Rendered layouts/_flashes (0.2ms)
+Completed in 17ms (View: 6, DB: 0) | 200 OK [http://localhost/members/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 00:02:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 00:02:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mMember Load (0.7ms)[0m   [0;1mSELECT * FROM "members" ORDER BY members.id DESC LIMIT 1[0m
+
+
+Processing MembersController#edit (for 127.0.0.1 at 2010-11-19 00:05:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMember Load (0.3ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering members/edit
+  [4;36;1mTeam Load (0.4ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendered members/_form (22.4ms)
+Completed in 37ms (View: 26, DB: 1) | 200 OK [http://localhost/members/1/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 00:05:44) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 00:05:44) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MembersController#update (for 127.0.0.1 at 2010-11-19 00:06:22) [PUT]
+  Parameters: {"commit"=>"Update Member", "authenticity_token"=>"muUKkHnnu5Rwk0/c0x7fw48fA+LACUj+kUUqFL1sw/s=", "member"=>{"name"=>"John Doe", "notes"=>"John Doe is an awesome programmer!", "team_id"=>"1", "email"=>"fake@gmail.com"}, "id"=>"1"}
+  [4;35;1mMember Load (0.4ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."id" = 1) [0m
+Redirected to http://localhost:3000/members/1
+Completed in 13ms (DB: 0) | 302 Found [http://localhost/members/1]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-11-19 00:06:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMember Load (0.3ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering members/show
+Rendered layouts/_flashes (0.2ms)
+Completed in 18ms (View: 6, DB: 0) | 200 OK [http://localhost/members/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 00:06:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 00:06:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MembersController#edit (for 127.0.0.1 at 2010-11-19 00:07:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMember Load (0.3ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering members/edit
+  [4;36;1mTeam Load (0.4ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendered members/_form (21.4ms)
+Completed in 35ms (View: 25, DB: 1) | 200 OK [http://localhost/members/1/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 00:07:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 00:07:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MembersController#update (for 127.0.0.1 at 2010-11-19 00:08:08) [PUT]
+  Parameters: {"commit"=>"Update Member", "authenticity_token"=>"muUKkHnnu5Rwk0/c0x7fw48fA+LACUj+kUUqFL1sw/s=", "member"=>{"name"=>"John Doe", "notes"=>"John Doe is an awesome Programmer!", "team_id"=>"1", "email"=>"fake@gmail.com"}, "id"=>"1"}
+  [4;35;1mMember Load (0.3ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."id" = 1) [0m
+Redirected to http://localhost:3000/members/1
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/members/1]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-11-19 00:08:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMember Load (0.4ms)[0m   [0;1mSELECT * FROM "members" WHERE ("members"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering members/show
+Rendered layouts/_flashes (0.2ms)
+Completed in 17ms (View: 6, DB: 0) | 200 OK [http://localhost/members/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 00:08:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 00:08:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MembersController#edit (for 127.0.0.1 at 2010-11-19 00:10:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMember Load (0.3ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering members/edit
+  [4;36;1mTeam Load (0.4ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendered members/_form (22.8ms)
+Completed in 38ms (View: 26, DB: 1) | 200 OK [http://localhost/members/1/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 00:10:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 00:10:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MembersController#update (for 127.0.0.1 at 2010-11-19 00:10:38) [PUT]
+  Parameters: {"commit"=>"Update Member", "authenticity_token"=>"muUKkHnnu5Rwk0/c0x7fw48fA+LACUj+kUUqFL1sw/s=", "member"=>{"name"=>"John Doe", "notes"=>"John Doe is an awesome Programmer!", "team_id"=>"1", "email"=>"fake@gmail.com"}, "id"=>"1"}
+  [4;35;1mMember Load (0.3ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."id" = 1) [0m
+  [4;36;1mMember Update (0.6ms)[0m   [0;1mUPDATE "members" SET "updated_at" = '2010-11-19 10:10:38', "email" = 'fake@gmail.com', "name" = 'John Doe', "notes" = 'John Doe is an awesome Programmer!', "team_id" = 1 WHERE "id" = 1[0m
+Redirected to http://localhost:3000/members/1
+Completed in 118ms (DB: 1) | 302 Found [http://localhost/members/1]
+
+
+Processing MembersController#show (for 127.0.0.1 at 2010-11-19 00:10:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMember Load (0.3ms)[0m   [0mSELECT * FROM "members" WHERE ("members"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering members/show
+Rendered layouts/_flashes (0.2ms)
+Completed in 92ms (View: 6, DB: 0) | 200 OK [http://localhost/members/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 00:10:38) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 00:10:39) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)

@@ -3,7 +3,7 @@ class TeamsController < ApplicationController
   # GET /team
   # GET /team.xml
   def index
-    @teams = Teams.find(:all)
+    @teams = Team.find(:all)
 
     respond_to do |format|
       format.html # index.haml
@@ -14,7 +14,7 @@ class TeamsController < ApplicationController
   # GET /team/1
   # GET /team/1.xml
   def show
-    @team = Teams.find(params[:id])
+    @team = Team.find(params[:id])
 
     respond_to do |format|
       format.html # show.haml
@@ -25,7 +25,7 @@ class TeamsController < ApplicationController
   # GET /team/new
   # GET /team/new.xml
   def new
-    @team = Teams.new
+    @team = Team.new
 
     respond_to do |format|
       format.html # new.haml
@@ -35,17 +35,17 @@ class TeamsController < ApplicationController
 
   # GET /team/1/edit
   def edit
-    @team = Teams.find(params[:id])
+    @team = Team.find(params[:id])
   end
 
   # POST /team
   # POST /team.xml
   def create
-    @team = Teams.new(params[:team])
+    @team = Team.new(params[:team])
 
     respond_to do |format|
       if @team.save
-        flash[:notice] = 'Teams was successfully created.'
+        flash[:notice] = 'Team was successfully created.'
         format.html { redirect_to(team_path(@team)) }
         format.xml  { render :xml => @team, :status => :created, :location => @team }
       else
@@ -58,11 +58,11 @@ class TeamsController < ApplicationController
   # PUT /team/1
   # PUT /team/1.xml
   def update
-    @team = Teams.find(params[:id])
+    @team = Team.find(params[:id])
 
     respond_to do |format|
       if @team.update_attributes(params[:team])
-        flash[:notice] = 'Teams was successfully updated.'
+        flash[:notice] = 'Team was successfully updated.'
         format.html { redirect_to(team_path(@team)) }
         format.xml  { head :ok }
       else
@@ -75,7 +75,7 @@ class TeamsController < ApplicationController
   # DELETE /team/1
   # DELETE /team/1.xml
   def destroy
-    @team = Teams.find(params[:id])
+    @team = Team.find(params[:id])
     @team.destroy
 
     respond_to do |format|
