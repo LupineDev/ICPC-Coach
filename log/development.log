@@ -2369,3 +2369,172 @@ ActionController::RoutingError (No route matches "/stylesheets/formtastic_change
   /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
 
 Rendering rescues/layout (not_found)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-12-15 14:28:14) [GET]
+  [4;36;1mMember Load (1.4ms)[0m   [0;1mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering members/index
+
+ActionView::TemplateError (undefined local variable or method `member' for #<ActionView::Base:0x7f766d78d878>) on line #17 of app/views/members/index.html.haml:
+14:     %td=h members.notes
+15:     %td=h members.team_id
+16:   
+17:     %td= link_to 'Show', member_path(member)
+18:     %td= link_to 'Edit', edit_member_path(member)
+19:     %td= link_to 'Destroy', member_path(member), :confirm => 'Are you sure?', :method => :delete, :confirm => "Are you sure?", :method => :delete
+20:     
+
+    app/views/members/index.html.haml:17:in `_run_haml_app47views47members47index46html46haml'
+    app/views/members/index.html.haml:10:in `each'
+    app/views/members/index.html.haml:10:in `_run_haml_app47views47members47index46html46haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:8:in `index'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (2.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-12-15 14:30:06) [GET]
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering members/index
+
+ActionView::TemplateError (undefined local variable or method `members' for #<ActionView::Base:0x7f766d7f9910>) on line #12 of app/views/members/index.html.haml:
+9: 
+10: - for member in @members
+11:   %tr
+12:     %td=h members.name
+13:     %td=h members.email
+14:     %td=h members.notes
+15:     %td=h members.team_id
+
+    app/views/members/index.html.haml:12:in `_run_haml_app47views47members47index46html46haml'
+    app/views/members/index.html.haml:10:in `each'
+    app/views/members/index.html.haml:10:in `_run_haml_app47views47members47index46html46haml'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/members_controller.rb:8:in `index'
+    /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendered rescues/_trace (55.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-12-15 14:30:32) [GET]
+  [4;36;1mMember Load (0.7ms)[0m   [0;1mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering members/index
+Completed in 27ms (View: 18, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-15 14:30:32) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-15 14:30:32) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-12-15 14:30:50) [GET]
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering members/index
+Completed in 23ms (View: 13, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-15 14:30:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-15 14:30:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-12-15 14:30:54) [GET]
+  [4;36;1mMember Load (0.8ms)[0m   [0;1mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering members/index
+Completed in 87ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-15 14:30:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-15 14:30:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-12-15 14:34:57) [GET]
+  [4;35;1mMember Load (0.7ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering members/index
+Completed in 15ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-15 14:34:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-15 14:34:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-12-15 14:35:28) [GET]
+  [4;36;1mMember Load (0.7ms)[0m   [0;1mSELECT * FROM "members" [0m
+Rendering template within layouts/application
+Rendering members/index
+Completed in 17ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-15 14:35:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-15 14:35:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/formtastic_changes.css" with {:method=>:get}):
+  /var/lib/gems/1.8/gems/haml-edge-2.3.241/rails/./lib/sass/plugin/rack.rb:43:in `call'
+
+Rendering rescues/layout (not_found)

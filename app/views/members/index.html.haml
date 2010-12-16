@@ -1,4 +1,4 @@
-%h1 Listing members
+%h1 Listing Team Members
 
 %table
   %tr
@@ -14,8 +14,8 @@
     %td=h members.notes
     %td=h members.team_id
   
-    %td= link_to 'Show', member_path(member)
-    %td= link_to 'Edit', edit_member_path(member)
-    %td= link_to 'Destroy', member_path(member), :confirm => 'Are you sure?', :method => :delete, :confirm => "Are you sure?", :method => :delete
+    %td= link_to 'Show', member_path(members)
+    %td= link_to 'Edit', edit_member_path(members)
+    %td= link_to 'Destroy', member_path(members), :confirm => 'Are you sure?', :method => :delete, :confirm => "Are you sure?", :method => :delete
     
 = link_to 'New member', new_member_path 
